@@ -1,0 +1,19 @@
+title: 逍遥云初
+subtitle: 记录、思考与成长
+description: 个人博客
+author: 逍遥云初
+language: zh-CN
+
+url: https://www.xiaoyaoyunchu.cloud
+root: /
+
+public_dir: public
+source_dir: source
+deploy:
+  type: git
+  repo: https://github.com/xiaoyaoyunchu/blog.git
+  branch: gh-pages
+
+server:
+  port: 4000
+  logger: false
