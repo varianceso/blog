@@ -9,202 +9,215 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
+        
         body { 
             font-family: 'Noto Serif SC', serif; 
-            background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), 
-                        url('https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=1920&q=80') center/cover fixed;
+            background: #f5f0e8;
+            color: #3d3d3d;
+            line-height: 1.8;
             min-height: 100vh;
-            color: #333;
-        }
-        header { 
-            text-align: center; 
-            padding: 50px 20px 20px; 
-        }
-        h1 {
-            font-family: 'ZCOOL XiaoWei', serif;
-            font-size: 3em;
-            color: #fff;
-            letter-spacing: 8px;
-            text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
-        }
-        .subtitle { 
-            color: rgba(255,255,255,0.9); 
-            font-size: 1em; 
-            margin-top: 10px; 
-            letter-spacing: 3px; 
         }
         
-        /* 首页分类筛选 */
-        .home-filters {
+        /* 顶部区域 */
+        .hero {
+            background: linear-gradient(180deg, #2c3e50 0%, #34495e 100%);
+            padding: 60px 20px 40px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-family: 'ZCOOL XiaoWei', serif;
+            font-size: 2.8em;
+            color: #fff;
+            letter-spacing: 10px;
+            margin-bottom: 8px;
+        }
+        
+        .subtitle {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.95em;
+            letter-spacing: 4px;
+        }
+        
+        /* 分类筛选 */
+        .filters {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 12px;
-            margin: 25px 20px;
-            padding: 18px 25px;
-            background: rgba(255,255,255,0.92);
-            border-radius: 50px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.12);
-        }
-        .filter-btn {
-            padding: 10px 26px;
-            background: transparent;
-            border: 1px solid #ccc;
-            color: #444;
-            border-radius: 25px;
-            font-size: 0.9em;
-            cursor: pointer;
-            transition: all 0.3s;
-            text-decoration: none;
-        }
-        .filter-btn:hover, .filter-btn.active {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: #fff;
-            border-color: transparent;
-            transform: scale(1.05);
+            gap: 10px;
+            margin-top: 25px;
         }
         
-        /* 子页分类标签 - 默认隐藏 */
-        .page-category {
-            display: none;
-            margin-bottom: 20px;
-        }
-        .page-category a {
-            display: inline-block;
-            padding: 6px 18px;
-            background: rgba(255,255,255,0.9);
-            color: #555;
+        .filter-btn {
+            padding: 8px 22px;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: rgba(255,255,255,0.8);
             border-radius: 20px;
             font-size: 0.85em;
             text-decoration: none;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-        }
-        
-        .container { 
-            max-width: 720px; 
-            margin: 0 auto; 
-            padding: 0 20px 100px; 
-        }
-        
-        /* 文章卡片样式 */
-        .article-card {
-            background: rgba(255,255,255,0.96);
-            border-radius: 8px;
-            padding: 28px;
-            margin-bottom: 20px;
-            box-shadow: 0 3px 20px rgba(0,0,0,0.08);
             transition: all 0.3s;
-            border-left: 4px solid transparent;
-        }
-        .article-card:hover { 
-            transform: translateY(-4px);
-            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
-            border-left-color: #667eea;
-        }
-        .article-title { 
-            font-size: 1.25em; 
-            font-weight: 500; 
-            color: #222; 
-            margin-bottom: 10px; 
-            line-height: 1.5;
-        }
-        .article-title a { 
-            color: inherit; 
-            text-decoration: none; 
-        }
-        .article-title a:hover {
-            color: #667eea;
-        }
-        .article-meta { 
-            color: #999; 
-            font-size: 0.8em; 
-            margin-bottom: 12px; 
-        }
-        .article-excerpt { 
-            color: #555; 
-            font-size: 0.92em; 
-            line-height: 1.8;
         }
         
-        /* 底部悬浮登录按钮 */
+        .filter-btn:hover, .filter-btn.active {
+            background: rgba(255,255,255,0.95);
+            color: #2c3e50;
+            border-color: transparent;
+        }
+        
+        /* 子页分类 */
+        .page-category {
+            display: none;
+            padding: 20px;
+            text-align: left;
+        }
+        
+        .page-category a {
+            display: inline-block;
+            padding: 8px 18px;
+            background: #f5f0e8;
+            color: #666;
+            border-radius: 20px;
+            font-size: 0.85em;
+            text-decoration: none;
+        }
+        
+        /* 文章列表 */
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 30px 20px 120px;
+        }
+        
+        .article-card {
+            background: #fff;
+            border-radius: 6px;
+            padding: 24px 26px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            transition: all 0.25s;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+        }
+        
+        .article-card[data-category="系统与历史"]:hover {
+            border-left: 3px solid #e74c3c;
+        }
+        
+        .article-card[data-category="记录与思考"]:hover {
+            border-left: 3px solid #3498db;
+        }
+        
+        .article-card[data-category="小说"]:hover {
+            border-left: 3px solid #9b59b6;
+        }
+        
+        .article-title {
+            font-size: 1.15em;
+            font-weight: 500;
+            color: #2c2c2c;
+            margin-bottom: 6px;
+            text-decoration: none;
+        }
+        
+        .article-meta {
+            color: #999;
+            font-size: 0.78em;
+            margin-bottom: 8px;
+        }
+        
+        .article-excerpt {
+            color: #666;
+            font-size: 0.88em;
+            line-height: 1.7;
+        }
+        
+        /* 底部悬浮登录 */
         .fixed-bottom {
             position: fixed;
             bottom: 0;
             left: 0;
             right: 0;
-            padding: 15px 20px 25px;
-            background: linear-gradient(to top, rgba(255,255,255,0.98) 60%, transparent);
+            padding: 18px 20px 28px;
+            background: linear-gradient(to top, #f5f0e8 50%, transparent);
             text-align: center;
         }
+        
         .login-btn {
             display: inline-block;
             padding: 12px 32px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
             color: #fff;
-            border-radius: 30px;
+            border-radius: 25px;
             font-size: 0.9em;
             text-decoration: none;
-            box-shadow: 0 4px 15px rgba(102,126,234,0.4);
+            box-shadow: 0 4px 12px rgba(52,152,219,0.3);
             transition: all 0.2s;
         }
+        
         .login-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(102,126,234,0.5);
+            box-shadow: 0 6px 18px rgba(52,152,219,0.4);
         }
         
-        footer { 
-            text-align: center; 
-            padding: 30px 20px 120px; 
-            color: rgba(255,255,255,0.7); 
-            font-size: 0.8em; 
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #aaa;
+            font-size: 0.8em;
         }
         
         @media (max-width: 768px) {
             h1 { font-size: 2.2em; }
-            .container { padding: 0 15px 100px; }
-            .article-card { padding: 22px; }
-            .home-filters { padding: 14px 18px; gap: 8px; }
-            .filter-btn { padding: 8px 18px; font-size: 0.85em; }
+            .container { padding: 20px 15px 120px; }
+            .article-card { padding: 20px; }
+            .filters { gap: 8px; }
+            .filter-btn { padding: 6px 16px; font-size: 0.8em; }
         }
     </style>
 </head>
 <body>
-    <header>
+    <div class="hero">
         <h1>逍遥云初</h1>
         <p class="subtitle">记录 · 思考 · 成长</p>
         
-        <!-- 首页分类筛选 -->
-        <div class="home-filters" id="homeFilters">
+        <!-- 首页分类 -->
+        <div class="filters" id="homeFilters">
             <a href="/" class="filter-btn active">全部</a>
             <a href="/?category=系统与历史" class="filter-btn">系统与历史</a>
             <a href="/?category=记录与思考" class="filter-btn">记录与思考</a>
             <a href="/?category=小说" class="filter-btn">小说</a>
         </div>
         
-        <!-- 子页分类显示 -->
+        <!-- 子页分类 -->
         <div class="page-category" id="pageCategory">
-            <a href="/" id="categoryLink">← 返回全部</a>
+            <a href="/" id="categoryLink">← 返回</a>
         </div>
-    </header>
+    </div>
     
     <div class="container">
-        <div class="article-card" data-category="系统与历史">
-            <h2 class="article-title"><a href="/articles/system.html">在系统之内：一个工程师的历史、技术与自处</a></h2>
-            <p class="article-meta">2026-03-14 · 系统与历史</p>
-            <p class="article-excerpt">在技术、历史与系统夹缝中，寻找一个不被吞没的位置...</p>
-        </div>
+        <a href="/articles/system.html" class="article-card" data-category="系统与历史">
+            <div class="article-title">在系统之内：一个工程师的历史、技术与自处</div>
+            <div class="article-meta">2026-03-14 · 系统与历史</div>
+            <div class="article-excerpt">在技术、历史与系统夹缝中，寻找一个不被吞没的位置...</div>
+        </a>
         
-        <div class="article-card" data-category="记录与思考">
-            <h2 class="article-title"><a href="/articles/moved.html">我被打动的那一刻，往往不是因为故事</a></h2>
-            <p class="article-meta">2026-03-14 · 记录与思考</p>
-            <p class="article-excerpt">一直都有这种情况。刷到一段文字，或者看到一个短视频...</p>
-        </div>
+        <a href="/articles/moved.html" class="article-card" data-category="记录与思考">
+            <div class="article-title">我被打动的那一刻，往往不是因为故事</div>
+            <div class="article-meta">2026-03-14 · 记录与思考</div>
+            <div class="article-excerpt">一直都有这种情况。刷到一段文字，或者看到一个短视频...</div>
+        </a>
         
-        <div class="article-card" data-category="小说">
-            <h2 class="article-title"><a href="/articles/passive.html">被动</a></h2>
-            <p class="article-meta">2026-03-14 · 小说</p>
-            <p class="article-excerpt">一部关于性格、算计与沉默如何被现实反复利用的中篇小说...</p>
-        </div>
+        <a href="/articles/passive.html" class="article-card" data-category="小说">
+            <div class="article-title">被动</div>
+            <div class="article-meta">2026-03-14 · 小说</div>
+            <div class="article-excerpt">一部关于性格、算计与沉默如何被现实反复利用的中篇小说...</div>
+        </a>
     </div>
     
     <div class="fixed-bottom">
@@ -222,12 +235,10 @@
         const categoryLink = document.getElementById('categoryLink');
         
         if (category) {
-            // 隐藏首页分类，显示子页分类
             homeFilters.style.display = 'none';
             pageCategory.style.display = 'block';
             categoryLink.textContent = '← ' + category;
             
-            // 筛选文章
             document.querySelectorAll('.article-card').forEach(card => {
                 if (card.dataset.category !== category) {
                     card.style.display = 'none';
