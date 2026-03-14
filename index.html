@@ -34,35 +34,41 @@
             letter-spacing: 3px; 
         }
         
-        /* 分类筛选 */
+        .container { 
+            max-width: 700px; 
+            margin: 0 auto; 
+            padding: 0 20px 100px; 
+        }
+        
+        /* 分类筛选 - 横向排列，位于文章列表上面 */
         .filters {
-            text-align: center;
-            margin: 20px 0 30px;
-            padding: 0 20px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 25px;
+            padding: 15px 20px;
+            background: rgba(255,255,255,0.9);
+            border-radius: 40px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
         }
         .filter-btn {
-            display: inline-block;
-            margin: 5px 8px;
-            padding: 8px 20px;
-            background: rgba(255,255,255,0.15);
-            border: 1px solid rgba(255,255,255,0.3);
-            color: #fff;
-            border-radius: 25px;
+            padding: 8px 22px;
+            background: transparent;
+            border: 1px solid #ddd;
+            color: #555;
+            border-radius: 20px;
             font-size: 0.85em;
             cursor: pointer;
             transition: all 0.3s;
             text-decoration: none;
         }
         .filter-btn:hover, .filter-btn.active {
-            background: rgba(255,255,255,0.9);
-            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            border-color: transparent;
         }
         
-        .container { 
-            max-width: 700px; 
-            margin: 0 auto; 
-            padding: 0 20px 80px; 
-        }
         .article-card {
             background: rgba(255,255,255,0.95);
             border-radius: 4px;
@@ -137,6 +143,8 @@
             h1 { font-size: 2.2em; }
             .container { padding: 0 15px 100px; }
             .article-card { padding: 20px; }
+            .filters { padding: 12px 15px; gap: 8px; }
+            .filter-btn { padding: 6px 16px; font-size: 0.8em; }
         }
     </style>
 </head>
@@ -144,16 +152,17 @@
     <header>
         <h1>逍遥云初</h1>
         <p class="subtitle">记录 · 思考 · 成长</p>
-        
+    </header>
+    
+    <div class="container">
+        <!-- 分类筛选 - 位于文章列表上面 -->
         <div class="filters">
             <a href="/" class="filter-btn active">全部</a>
             <a href="/?category=系统与历史" class="filter-btn">系统与历史</a>
             <a href="/?category=记录与思考" class="filter-btn">记录与思考</a>
             <a href="/?category=小说" class="filter-btn">小说</a>
         </div>
-    </header>
-    
-    <div class="container">
+        
         <div class="article-card" data-category="系统与历史">
             <h2 class="article-title"><a href="/articles/system.html">在系统之内：一个工程师的历史、技术与自处</a></h2>
             <p class="article-meta">2026-03-14 · 系统与历史</p>
@@ -180,7 +189,6 @@
     <footer>© 2026 逍遥云初</footer>
     
     <script>
-        // 简单的前端分类筛选
         const urlParams = new URLSearchParams(window.location.search);
         const category = urlParams.get('category');
         
