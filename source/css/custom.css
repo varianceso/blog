@@ -1,27 +1,26 @@
 /* 艺术字体配置 */
 @import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=ZCOOL+KuaiLe&family=Noto+Serif+SC:wght@400;700&display=swap');
 
-/* ========== 首页美化 ========== */
+/* ========== 首页 ========== */
 
 /* 去掉左上角logo文字 */
 #blog-info {
     display: none !important;
 }
 
-/* 更换首页背景 - 黄昏 */
+/* 首页背景 - 保持黄昏图片 */
 #page-header {
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
                 url('https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=1920&q=80') center/cover no-repeat !important;
     height: 100vh !important;
 }
 
-/* 标题区域居中放大 */
+/* 标题区域 */
 #site-info {
     text-align: center;
     padding-top: 30vh;
 }
 
-/* 标题字体 */
 #site-title {
     font-family: 'Ma Shan Zheng', cursive !important;
     font-size: 4em !important;
@@ -30,7 +29,6 @@
     color: white !important;
 }
 
-/* 副标题 */
 #site-subtitle {
     font-family: 'Noto Serif SC', serif !important;
     letter-spacing: 8px;
@@ -39,7 +37,7 @@
     margin-top: 20px;
 }
 
-/* 导航栏透明 */
+/* 导航栏 */
 #nav {
     background: transparent !important;
 }
@@ -48,7 +46,7 @@
     color: white !important;
 }
 
-/* 首页底部 - Minimax登录按钮 */
+/* 首页底部 */
 .footer-link-btn {
     display: inline-block;
     padding: 12px 30px;
@@ -60,12 +58,6 @@
     text-decoration: none !important;
     font-size: 15px;
     border: 1px solid rgba(255,255,255,0.3);
-    transition: all 0.3s ease;
-}
-
-.footer-link-btn:hover {
-    background: rgba(255,255,255,0.3) !important;
-    transform: translateY(-3px);
 }
 
 #footer {
@@ -73,21 +65,13 @@
     color: white !important;
 }
 
-#footer a {
-    color: white !important;
-}
-
-/* ========== 文章列表美化 ========== */
-
-/* 文章卡片 */
+/* ========== 文章列表 ========== */
 .recent-post-item {
     background: rgba(255,255,255,0.95) !important;
     border-radius: 16px !important;
     margin: 20px 0 !important;
     padding: 25px !important;
     box-shadow: 0 4px 20px rgba(0,0,0,0.08) !important;
-    transition: all 0.3s ease !important;
-    border-left: 4px solid #667eea !important;
 }
 
 .recent-post-item:hover {
@@ -95,24 +79,14 @@
     box-shadow: 0 8px 30px rgba(0,0,0,0.12) !important;
 }
 
-/* 文章标题 */
 .recent-post-item .post-title {
     font-family: 'Noto Serif SC', serif !important;
     font-size: 1.5em !important;
     color: #2c3e50 !important;
-    font-weight: 700 !important;
-    margin-bottom: 10px !important;
 }
 
-/* 文章日期 */
 .recent-post-item .post-meta .post-meta-date {
     color: #667eea !important;
-    font-weight: 600 !important;
-}
-
-/* 文章分类标签 */
-.recent-post-item .post-meta .article-meta__tags {
-    margin-left: 10px !important;
 }
 
 .recent-post-item .article-meta__tags span {
@@ -120,269 +94,60 @@
     color: white !important;
     padding: 4px 12px !important;
     border-radius: 15px !important;
-    font-size: 12px !important;
-    margin-right: 8px !important;
 }
 
-/* 文章摘要 */
-.recent-post-item .postcerpt {
-    color: #666 !important;
-    line-height: 1.8 !important;
-    font-size: 15px !important;
-}
-
-/* ========== 文章内容美化 ========== */
-
-/* 正文区域 */
+/* ========== 文章内容 ========== */
 #article-container {
     font-family: 'Noto Serif SC', serif !important;
     font-size: 17px !important;
     line-height: 2 !important;
-    color: #3d3d3d !important;
 }
 
-/* 正文段落 */
 #article-container p {
     margin: 1.5em 0 !important;
-    text-align: justify !important;
 }
 
-/* 二级标题 */
 #article-container h2 {
     font-family: 'Ma Shan Zheng', cursive !important;
     font-size: 1.8em !important;
     color: #2c3e50 !important;
     border-left: 4px solid #667eea !important;
     padding-left: 15px !important;
-    margin: 2em 0 1em 0 !important;
 }
 
-/* 三级标题 */
-#article-container h3 {
-    font-size: 1.4em !important;
-    color: #34495e !important;
-    margin: 1.5em 0 0.8em 0 !important;
-}
-
-/* 引用块 */
 #article-container blockquote {
     background: linear-gradient(135deg, rgba(102,126,234,0.1), rgba(118,75,162,0.1)) !important;
     border-left: 4px solid #667eea !important;
     padding: 15px 20px !important;
-    margin: 1.5em 0 !important;
-    border-radius: 0 10px 10px 0 !important;
-    font-style: italic !important;
 }
 
-/* 加粗文字 - 强调 */
 #article-container strong {
     color: #667eea !important;
-    font-weight: 700 !important;
-    background: linear-gradient(120deg, rgba(102,126,234,0.15) 0%, rgba(102,126,234,0.15) 100%);
+    background: rgba(102,126,234,0.15);
     padding: 2px 6px !important;
     border-radius: 4px !important;
 }
 
-/* 斜体 */
-#article-container em {
-    color: #764ba2 !important;
-    font-style: italic !important;
+/* 重点句子样式 */
+.emphasis {
+    color: #2196F3 !important;
+    font-weight: 700 !important;
+    background: rgba(33,150,243,0.1) !important;
 }
 
-/* 代码块 */
-#article-container code {
-    background: #f5f5f5 !important;
-    padding: 2px 8px !important;
-    border-radius: 4px !important;
-    color: #e74c3c !important;
-    font-family: 'Consolas', monospace !important;
-}
-
-/* 分割线 */
-#article-container hr {
-    border: none !important;
-    height: 1px !important;
-    background: linear-gradient(90deg, transparent, #667eea, transparent) !important;
-    margin: 3em 0 !important;
-}
-
-/* 列表 */
-#article-container ul, #article-container ol {
-    padding-left: 2em !important;
+.quote-highlight {
+    color: #E91E63 !important;
+    border-left: 4px solid #E91E63 !important;
+    background: rgba(233,30,99,0.08) !important;
+    padding: 10px 15px !important;
+    display: block !important;
     margin: 1em 0 !important;
 }
 
-#article-container li {
-    margin: 0.5em 0 !important;
-    line-height: 1.8 !important;
-}
-
-/* 文章底部标签 */
-.article-tags {
-    margin-top: 30px !important;
-    padding-top: 20px !important;
-}
-
-.article-tags a {
-    background: linear-gradient(135deg, #667eea, #764ba2) !important;
-    color: white !important;
-    padding: 6px 15px !important;
-    border-radius: 20px !important;
-    margin: 5px !important;
-    display: inline-block !important;
-    transition: all 0.3s !important;
-}
-
-.article-tags a:hover {
-    transform: translateY(-2px) !important;
-    box-shadow: 0 4px 12px rgba(102,126,234,0.4) !important;
-}
-
-/* ========== 分类页面美化 ========== */
-
-/* 分类页面标题 */
-.category-lists {
-    padding: 30px 0;
-}
-
-.category-lists .category-title {
-    font-family: 'Ma Shan Zheng', cursive !important;
-    font-size: 2em !important;
-    color: #2c3e50 !important;
-    text-align: center;
-    margin-bottom: 30px;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #667eea;
-}
-
-/* 分类列表 */
-.category-list li {
-    background: rgba(255,255,255,0.95) !important;
-    margin: 15px 0 !important;
-    padding: 20px 25px !important;
-    border-radius: 12px !important;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05) !important;
-    transition: all 0.3s ease !important;
-    list-style: none !important;
-}
-
-.category-list li:hover {
-    transform: translateX(10px) !important;
-    box-shadow: 0 4px 20px rgba(102,126,234,0.2) !important;
-}
-
-.category-list li a {
-    font-size: 1.2em !important;
-    color: #2c3e50 !important;
-    font-weight: 600 !important;
-}
-
-.category-list li .category-list-count {
-    background: linear-gradient(135deg, #667eea, #764ba2) !important;
-    color: white !important;
-    padding: 5px 12px !important;
-    border-radius: 15px !important;
-    font-size: 12px !important;
-}
-
-/* ========== 标签页面 ========== */
-.tag-lists {
-    padding: 30px 0;
-}
-
+/* ========== 分类/标签页面 ========== */
+.category-lists .category-title,
 .tag-lists .tag-title {
     font-family: 'Ma Shan Zheng', cursive !important;
     font-size: 2em !important;
     color: #2c3e50 !important;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.tag-list li {
-    background: rgba(255,255,255,0.95) !important;
-    margin: 10px !important;
-    padding: 12px 20px !important;
-    border-radius: 20px !important;
-    display: inline-block !important;
-    transition: all 0.3s ease !important;
-}
-
-.tag-list li:hover {
-    background: linear-gradient(135deg, #667eea, #764ba2) !important;
-    transform: translateY(-3px) !important;
-}
-
-.tag-list li a {
-    color: #555 !important;
-}
-
-.tag-list li:hover a {
-    color: white !important;
-}
-
-/* ========== 文章内更多样式 ========== */
-
-/* 首字下沉 */
-#article-container > p:first-of-type::first-letter {
-    font-family: 'Ma Shan Zheng', cursive !important;
-    font-size: 3.5em !important;
-    float: left;
-    line-height: 1;
-    padding-right: 10px;
-    color: #667eea !important;
-    font-weight: bold !important;
-}
-
-/* 重点句子 - 蓝色 */
-.emphasis-blue {
-    color: #2196F3 !important;
-    font-weight: 600 !important;
-    background: linear-gradient(120deg, rgba(33,150,243,0.1) 0%, rgba(33,150,243,0.1) 100%);
-    padding: 2px 8px !important;
-    border-radius: 4px !important;
-}
-
-/* 重点句子 - 红色 */
-.emphasis-red {
-    color: #E91E63 !important;
-    font-weight: 600 !important;
-    background: linear-gradient(120deg, rgba(233,30,99,0.1) 0%, rgba(233,30,99,0.1) 100%);
-    padding: 2px 8px !important;
-    border-radius: 4px !important;
-}
-
-/* 重点句子 - 紫色 */
-.emphasis-purple {
-    color: #9C27B0 !important;
-    font-weight: 600 !important;
-    background: linear-gradient(120deg, rgba(156,39,176,0.1) 0%, rgba(156,39,176,0.1) 100%);
-    padding: 2px 8px !important;
-    border-radius: 4px !important;
-}
-
-/* 重点句子 - 绿色 */
-.emphasis-green {
-    color: #4CAF50 !important;
-    font-weight: 600 !important;
-    background: linear-gradient(120deg, rgba(76,175,80,0.1) 0%, rgba(76,175,80,0.1) 100%);
-    padding: 2px 8px !important;
-    border-radius: 4px !important;
-}
-
-/* 段落开头的强调词 */
-.word-highlight {
-    color: #667eea !important;
-    font-weight: 700 !important;
-    font-size: 1.1em !important;
-}
-
-/* 结束语样式 */
-.conclusion {
-    background: linear-gradient(135deg, rgba(102,126,234,0.05), rgba(118,75,162,0.05)) !important;
-    border-left: 4px solid #667eea !important;
-    padding: 20px !important;
-    margin: 30px 0 !important;
-    border-radius: 0 10px 10px 0 !important;
-    font-style: italic !important;
-    color: #555 !important;
 }
