@@ -52,7 +52,7 @@ aside:
     description: null
     enable: true
   card_categories:
-    enable: true
+    enable: false
     expand: none
     limit: 8
     sort_order: null
@@ -75,7 +75,7 @@ aside:
   card_tags:
     color: false
     custom_colors: null
-    enable: true
+    enable: false
     limit: 40
     order: 1
     orderby: random
@@ -273,14 +273,8 @@ index_post_content:
 index_site_info_top: null
 index_top_img_height: null
 inject:
-  bottom:
-  - <div style="text-align:center;padding:20px;margin-top:30px;border-top:1px solid
-    rgba(255,255,255,0.1);"><a href="https://platform.minimax.io/" target="_blank"
-    style="display:inline-block;padding:10px 25px;background:linear-gradient(135deg,#667eea,#764ba2);color:white;border-radius:25px;text-decoration:none;margin:10px;font-size:14px;"><i
-    class="fas fa-robot"></i> 登录 Minimax</a><p style="opacity:0.7;margin-top:10px;">探索
-    AI 的无限可能</p></div>
-  head:
-  - <link rel="stylesheet" href="/css/custom.css">
+  bottom: null
+  head: null
 instantpage: false
 lazyload:
   blur: false
@@ -304,7 +298,8 @@ math:
   per_page: true
   use: null
 menu:
-  分类: /categories/ null
+  分类: /categories/
+  标签: /tags/
 mermaid:
   code_write: false
   enable: false
@@ -316,7 +311,7 @@ mermaid:
 microsoft_clarity: null
 nav:
   display_post_title: true
-  display_title: false
+  display_title: true
   fixed: false
   logo: null
 note:
