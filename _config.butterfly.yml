@@ -425,18 +425,14 @@ social: null
 structured_data:
   alternate_name: null
   enable: false
-subtitle:
-  effect: true
-  enable: false
-  source: false
-  sub: null
-  typed_option: null
+subtitle: 记录 · 思考 · 成长
 tag_img: null
 tag_per_img: null
 tag_ui: null
 text_align_justify: false
 tidio:
   public_key: null
+title: 逍遥云初
 toc:
   expand: false
   number: true
