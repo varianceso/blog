@@ -32,12 +32,12 @@ artalk:
   site: null
   visitor: false
 aside:
-  button: true
+  button: false
   card_announcement:
     content: This is my Blog
-    enable: true
+    enable: false
   card_archives:
-    enable: true
+    enable: false
     format: MMMM YYYY
     limit: 8
     order: -1
@@ -68,7 +68,7 @@ aside:
     orderBy: date
     series_title: false
   card_recent_post:
-    enable: true
+    enable: false
     limit: 5
     sort: date
     sort_order: null
@@ -81,7 +81,7 @@ aside:
     orderby: random
     sort_order: null
   card_webinfo:
-    enable: true
+    enable: false
     last_push_date: true
     post_count: true
     runtime_date: null
