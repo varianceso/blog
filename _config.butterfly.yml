@@ -32,68 +32,7 @@ artalk:
   site: null
   visitor: false
 aside:
-  button: false
-  card_announcement:
-    content: This is my Blog
-    enable: false
-  card_archives:
-    enable: false
-    format: MMMM YYYY
-    limit: 8
-    order: -1
-    sort_order: null
-    type: monthly
-  card_author:
-    button:
-      enable: true
-      icon: fab fa-github
-      link: https://github.com/xxxxxx
-      text: Follow Me
-    description: null
-    enable: true
-  card_categories:
-    enable: false
-    expand: none
-    limit: 8
-    sort_order: null
-  card_newest_comments:
-    avatar: true
-    enable: false
-    limit: 6
-    sort_order: null
-    storage: 10
-  card_post_series:
-    enable: true
-    order: -1
-    orderBy: date
-    series_title: false
-  card_recent_post:
-    enable: false
-    limit: 5
-    sort: date
-    sort_order: null
-  card_tags:
-    color: false
-    custom_colors: null
-    enable: false
-    limit: 40
-    order: 1
-    orderby: random
-    sort_order: null
-  card_webinfo:
-    enable: false
-    last_push_date: true
-    post_count: true
-    runtime_date: null
-    sort_order: null
-  display:
-    archive: true
-    category: true
-    tag: true
-  enable: true
-  hide: false
-  mobile: true
-  position: right
+  enable: false
 avatar:
   effect: false
   img: /img/butterfly-icon.png
