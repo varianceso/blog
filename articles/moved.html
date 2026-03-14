@@ -4,22 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我被打动的那一刻，往往不是因为故事 | 逍遥云初</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Noto Serif SC', serif; background: #f9f9f9; color: #333; line-height: 1.9; }
-        .hero { height: 40vh; background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=1920&q=80') center/cover; display: flex; align-items: center; justify-content: center; }
-        .hero h1 { font-size: 2em; color: #fff; text-align: center; padding: 20px; font-weight: 400; }
-        .container { max-width: 680px; margin: -50px auto 50px; background: #fff; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); padding: 45px; }
-        .back { margin-bottom: 25px; }
-        .back a { color: #666; text-decoration: none; font-size: 0.9em; }
-        .meta { color: #999; font-size: 0.8em; margin-bottom: 30px; padding-bottom: 15px; border-bottom: 1px solid #eee; }
-        .content h2 { font-size: 1.2em; color: #222; margin: 2em 0 0.8em; font-weight: 700; }
-        .content h3 { font-size: 1.05em; color: #333; margin: 1.5em 0 0.6em; font-weight: 700; }
-        .content p { margin: 0.9em 0; text-align: justify; }
-        .content blockquote { border-left: 3px solid #ccc; padding-left: 18px; margin: 1.5em 0; color: #555; }
-        .content hr { border: none; border-top: 1px solid #eee; margin: 2em 0; }
-        footer { text-align: center; padding: 30px; color: #999; font-size: 0.8em; }
+        body { 
+            font-family: 'Noto Serif SC', serif; 
+            background: #faf8f5; 
+            color: #2c2c2c; 
+            line-height: 2; 
+            font-size: 17px;
+        }
+        .hero { 
+            height: 45vh; 
+            background: linear-gradient(135deg, rgba(30,40,55,0.8) 0%, rgba(50,60,75,0.75) 100%), 
+                        url('https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=1920&q=80') center/cover; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+        }
+        .hero h1 { 
+            font-family: 'ZCOOL XiaoWei', serif;
+            font-size: 2.2em; 
+            color: #fff; 
+            text-align: center; 
+            padding: 0 20px;
+            font-weight: 400;
+            letter-spacing: 2px;
+        }
+        .container { 
+            max-width: 720px; 
+            margin: -60px auto 60px; 
+            background: #fff; 
+            border-radius: 2px; 
+            box-shadow: 0 2px 20px rgba(0,0,0,0.06); 
+            padding: 50px 55px; 
+        }
+        .back { margin-bottom: 30px; }
+        .back a { color: #8b7355; text-decoration: none; font-size: 0.9em; transition: color 0.2s; }
+        .back a:hover { color: #5d4e37; }
+        .meta { color: #999; font-size: 0.8em; margin-bottom: 35px; padding-bottom: 20px; border-bottom: 1px solid #eee; letter-spacing: 1px; }
+        .content h2 { 
+            font-family: 'ZCOOL XiaoWei', serif;
+            font-size: 1.35em; 
+            color: #2c2c2c; 
+            margin: 2.5em 0 1em; 
+            font-weight: 400;
+            border-left: 3px solid #8b7355;
+            padding-left: 15px;
+        }
+        .content h3 {
+            font-size: 1.1em;
+            color: #555;
+            margin: 2em 0 0.8em;
+            font-weight: 500;
+        }
+        .content p { 
+            margin: 1.1em 0; 
+            text-align: justify; 
+            text-indent: 2em;
+        }
+        .content blockquote { 
+            border-left: 2px solid #d4c4b0; 
+            padding: 10px 20px; 
+            margin: 1.8em 0; 
+            color: #5d4e37;
+            background: #faf8f5;
+            font-style: italic;
+            text-indent: 0;
+        }
+        .content hr { border: none; border-top: 1px dashed #e0d8cf; margin: 2.5em 0; }
+        footer { text-align: center; padding: 40px 20px; color: #aaa; font-size: 0.85em; }
+        footer a { color: #8b7355; }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.7em; }
+            .container { padding: 35px 25px; margin: -40px 15px 30px; }
+        }
     </style>
 </head>
 <body>
