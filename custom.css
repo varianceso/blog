@@ -1,0 +1,76 @@
+/* 艺术字体配置 */
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=ZCOOL+KuaiLe&family=Noto+Serif+SC:wght@400;700&display=swap');
+
+/* 去掉左上角logo文字 */
+#blog-info {
+    display: none !important;
+}
+
+/* 更换首页背景 - 优雅风景图 */
+#page-header {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                url('https://images.unsplash.com/photo-1507400492013-162706c8c05e?w=1920&q=80') center/cover no-repeat !important;
+    height: 100vh !important;
+}
+
+/* 标题区域居中放大 */
+#site-info {
+    text-align: center;
+    padding-top: 30vh;
+}
+
+/* 标题字体 */
+#site-title {
+    font-family: 'Ma Shan Zheng', cursive !important;
+    font-size: 4em !important;
+    letter-spacing: 15px;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+    color: white !important;
+}
+
+/* 副标题 */
+#site-subtitle {
+    font-family: 'Noto Serif SC', serif !important;
+    letter-spacing: 8px;
+    opacity: 0.9;
+    color: white !important;
+    margin-top: 20px;
+}
+
+/* 导航栏透明 */
+#nav {
+    background: transparent !important;
+}
+
+#nav * {
+    color: white !important;
+}
+
+/* 首页底部 - Minimax登录按钮 */
+.footer-link-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    margin: 10px;
+    background: rgba(255,255,255,0.2) !important;
+    backdrop-filter: blur(10px);
+    color: white !important;
+    border-radius: 30px;
+    text-decoration: none !important;
+    font-size: 15px;
+    border: 1px solid rgba(255,255,255,0.3);
+    transition: all 0.3s ease;
+}
+
+.footer-link-btn:hover {
+    background: rgba(255,255,255,0.3) !important;
+    transform: translateY(-3px);
+}
+
+#footer {
+    background: transparent !important;
+    color: white !important;
+}
+
+#footer a {
+    color: white !important;
+}
