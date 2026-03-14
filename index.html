@@ -34,6 +34,7 @@
             margin-bottom: 30px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.1);
             transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
         }
         .article-card:hover { transform: translateY(-5px); box-shadow: 0 8px 30px rgba(0,0,0,0.15); }
         .article-card img { width: 100%; height: 250px; object-fit: cover; }
@@ -49,6 +50,7 @@
             margin-right: 8px;
         }
         footer { text-align: center; padding: 40px; color: rgba(255,255,255,0.8); }
+        footer a { color: white; }
     </style>
 </head>
 <body>
@@ -58,6 +60,7 @@
             <p class="subtitle">记录 · 思考 · 成长</p>
         </header>
         <div class="article-list">
+            <a href="/articles/system.html" style="text-decoration:none;color:inherit;">
             <div class="article-card">
                 <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80" alt="封面">
                 <div class="article-content">
@@ -66,6 +69,8 @@
                     <div class="article-tags"><span>成长</span><span>感悟</span></div>
                 </div>
             </div>
+            </a>
+            <a href="/articles/moved.html" style="text-decoration:none;color:inherit;">
             <div class="article-card">
                 <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&q=80" alt="封面">
                 <div class="article-content">
@@ -74,6 +79,8 @@
                     <div class="article-tags"><span>成长</span><span>感悟</span><span>随笔</span></div>
                 </div>
             </div>
+            </a>
+            <a href="/articles/passive.html" style="text-decoration:none;color:inherit;">
             <div class="article-card">
                 <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800&q=80" alt="封面">
                 <div class="article-content">
@@ -82,6 +89,7 @@
                     <div class="article-tags"><span>小说</span></div>
                 </div>
             </div>
+            </a>
         </div>
         <footer><p>© 2026 逍遥云初 · 记录、思考与成长</p></footer>
     </div>
