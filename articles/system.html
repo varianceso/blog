@@ -4,60 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>在系统之内：一个工程师的历史、技术与自处 | 逍遥云初</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Noto Serif SC', serif; background: #fafafa; color: #333; line-height: 1.8; }
-        .hero { height: 50vh; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80') center/cover; display: flex; align-items: center; justify-content: center; }
-        .hero h1 { font-family: 'Ma Shan Zheng', cursive; font-size: 3em; color: white; text-shadow: 2px 2px 10px rgba(0,0,0,0.5); text-align: center; padding: 20px; }
-        .container { max-width: 750px; margin: -60px auto 40px; background: white; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.1); padding: 50px; position: relative; }
-        .meta { text-align: center; color: #667eea; margin-bottom: 40px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
-        .meta .date { font-size: 0.9em; }
-        .meta .category { background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.8em; margin-left: 10px; }
-        .content p { margin: 1.5em 0; text-align: justify; }
-        .content h2 { font-family: 'Ma Shan Zheng', cursive; font-size: 1.8em; color: #2c3e50; margin: 2em 0 1em; padding-left: 15px; border-left: 4px solid #667eea; }
-        .highlight { background: linear-gradient(120deg, rgba(102,126,234,0.1) 0%, rgba(102,126,234,0.1) 100%); padding: 3px 8px; border-radius: 4px; }
-        .quote { background: linear-gradient(135deg, rgba(102,126,234,0.08), rgba(118,75,162,0.08)); border-left: 4px solid #667eea; padding: 20px; margin: 2em 0; border-radius: 0 10px 10px 0; font-style: italic; }
-        .image-caption { text-align: center; color: #888; font-size: 0.9em; margin: 10px 0 30px; }
-        .image-caption img { width: 100%; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); }
-        .back { position: absolute; top: 20px; left: 30px; }
-        .back a { color: #667eea; text-decoration: none; font-size: 0.9em; }
-        footer { text-align: center; padding: 40px; color: #888; }
-        footer a { color: #667eea; }
+        body { font-family: 'Noto Serif SC', serif; background: #f8f8f8; color: #333; line-height: 1.9; }
+        .hero { height: 35vh; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80') center/cover; display: flex; align-items: center; justify-content: center; }
+        .hero h1 { font-family: 'Ma Shan Zheng', cursive; font-size: 2em; color: #fff; text-align: center; padding: 20px; }
+        .container { max-width: 680px; margin: -40px auto 40px; background: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); padding: 40px; }
+        .back { margin-bottom: 25px; }
+        .back a { color: #666; text-decoration: none; font-size: 0.9em; }
+        .meta { color: #888; font-size: 0.85em; margin-bottom: 30px; padding-bottom: 15px; border-bottom: 1px solid #eee; }
+        .content h2 { font-family: 'Ma Shan Zheng', cursive; font-size: 1.4em; color: #333; margin: 2em 0 0.8em; }
+        .content p { margin: 1em 0; text-align: justify; }
+        .content blockquote { border-left: 3px solid #ddd; padding-left: 15px; margin: 1.5em 0; color: #555; font-style: italic; }
+        .image-wrap { margin: 25px 0; text-align: center; }
+        .image-wrap img { width: 100%; max-width: 600px; border-radius: 6px; }
+        .image-wrap p { color: #888; font-size: 0.85em; margin-top: 8px; }
+        footer { text-align: center; padding: 30px; color: #888; font-size: 0.85em; }
     </style>
 </head>
 <body>
     <div class="hero"><h1>在系统之内：<br>一个工程师的历史、技术与自处</h1></div>
     <div class="container">
         <div class="back"><a href="/">← 返回首页</a></div>
-        <div class="meta">
-            <span class="date">2026-03-14</span>
-            <span class="category">系统与历史</span>
-        </div>
+        <div class="meta">2026-03-14 · 系统与历史</div>
         <div class="content">
-            <p>作为一个工程师，我常常思考一个问题：<span class="highlight">技术到底把我们带向了何方？</span>我们写代码、做系统、追新技术，但有没有想过，这些东西最终会塑造一个什么样的世界？</p>
+            <blockquote>在技术、历史与系统夹缝中，寻找一个不被吞没的位置...</blockquote>
             
-            <div class="image-caption"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80" alt="技术"><br>技术的力量在于如何运用</div>
+            <h2>一、一种说不出口的疲惫</h2>
+            <p>我很难准确地说清楚，自己是从什么时候开始感到疲惫的。工作并没有突然失控。项目在推进，需求在迭代，代码也在一行一行地写。作为一名后端研发，我能完成交付，能解决问题，也称得上"可用"。从表面看，一切都在正轨之中。</p>
+            <p>可就是在这样的日常里，我越来越频繁地感到一种难以言说的空耗感。它并不表现为强烈的厌倦，也不是对某个具体的人或事的不满。更多时候，它像是一种缓慢而持续的消磨：一天结束后，身体并不算太累，但心里却提不起任何成就感。</p>
             
-            <p>我见过太多人，包括我自己，<span class="highlight">把技术当成了一切</span>。觉得只要学会了最新框架，只要代码写得漂亮，只要能解决复杂问题，就是一个合格的工程师。但有时候我会突然停下来，问自己：<strong>这一切到底是为了什么？</strong></p>
+            <div class="image-wrap">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80" alt="技术">
+                <p>技术的力量</p>
+            </div>
             
-            <h2>系统的边界</h2>
-            <p>我们生活在一个巨大的系统里。这个系统由代码、算法、服务器、network组成，但<span class="highlight">真正重要的，从来不是技术本身</span>，而是用技术的人。</p>
+            <h2>二、从《明朝那些事儿》开始的沉迷</h2>
+            <p>真正让我停留下来的，是《明朝那些事儿》。一开始，我并没有带着"学习历史"的目的去读它。更多时候，它只是被当作一种消遣——在技术之外，找点不需要立刻给出答案的东西。</p>
+            <p>吸引我的，并不是具体的年份、制度或史实细节，而是书里那些活生生的人。皇帝、文官、宦官、将领，他们在各自的位置上做着选择。</p>
+            <p><strong>杨继盛</strong>。他并不是故事里最显赫的角色，却用一种近乎决绝的方式，在严密而冷酷的权力结构中，撕开了一道裂缝。为弹劾严嵩，他被投入诏狱，整整三年。刮骨去腐、严刑折磨、孤立无援——几乎所有能想象的苦难，他都经历了。</p>
+            <p>读到这里时，我心里是酸的。那是一种很复杂的感受：既不是单纯的敬佩，也不是轻易的共情，而是一种被命运尺度震到的沉默。</p>
             
-            <blockquote class="quote">技术是工具，使用工具的人才是决定力量的关键。</blockquote>
+            <h2>三、燕云：当历史以另一种方式靠近</h2>
+            <p>如果说《明朝那些事儿》让我是在旁观历史，那么《燕云》则让我第一次有了"走进历史"的感觉。</p>
+            <p>真正让我久久无法平静的，是"麻布袋"。在游戏里，他只是一个再普通不过的小人物。没有显赫的身份，也没有改变时代的能力，只是在唐末动荡的乱世中，挣扎着活下去。</p>
+            <p>他一路颠沛流离，躲避战乱，承受饥饿与恐惧。最终，在生命走到尽头时，他依然没能踏进长安一步。就在河西，他死了。死得毫无尊严，也无人铭记。</p>
+            <p>真正残酷的是，他甚至不是被一场宏大的战争夺走生命，而是被一种生存在荒原上的鸟啄食双眼。在生命的最后时刻，麻布袋想到了一种近乎绝望的办法：他把棉花的种子，放进了自己的眼眶里。</p>
+            <p>读到这里，我久久说不出话。这不是英雄叙事，也不是牺牲被歌颂的故事。它只是冷静地告诉你：系统不会记住你，但你的选择，可能依旧会留下痕迹。</p>
             
-            <p>我发现，<strong>最优秀的工程师不是那些技术最牛的，而是那些最懂得思考的</strong>。他们会问：这个系统要解决什么问题？用户真正需要的是什么？我们的代码会对现实世界产生什么影响？</p>
+            <h2>四、回到职场：我突然理解了"系统"的残酷</h2>
+            <p>真正让我感到疲惫与不安的，并不是某一次需求变更、某一个难解的技术问题，而是我长期身处其中、却很少被明说的那套系统。</p>
+            <p>在互联网公司里，这种系统往往以一种看似理性的方式存在——KPI、OKR、末位淘汰。它们被包装成"公平"、"透明"、"激励"，但本质上，它们是一套筛选机制。而被筛选掉的人，并不必然意味着能力不足。</p>
+            <p>历史中，这样的情形并不罕见。明正德年间，仇钺虽然在前线几乎全军覆没，但呈报至朝廷的战报中，这一战却被定性为"大捷"。在权力中心的叙事里，胜负并不总是由事实本身决定。</p>
+            <p>当我意识到这一点时，心里忽然产生了一种强烈的共鸣。在职场中，很多项目的成败，同样需要经过层层转述，最终被压缩成一句评价。</p>
             
-            <h2>自处之道</h2>
-            <p>在技术的高速公路上，我们很容易迷失自我。<span class="highlight">键盘敲得飞快，屏幕亮到深夜，</span>但内心却越来越空虚。</p>
-            
-            <p>我想说的是：<strong>别忘了停下来，想一想。</strong>想一想自己为什么做这件事，想一想技术之外的生活，想一想那些更重要的人和事。</p>
-            
-            <div class="image-caption"><img src="https://images.unsplash.com/photo-1499728603263-13726abce5fd?w=800&q=80" alt="思考"><br>在忙碌中寻找宁静</div>
-            
-            <p>工程师不应该只是一个<span class="highlight">代码机器</span>，更应该是一个<span class="highlight">有思想、有温度的人</span>。我们需要技术，但更需要技术之外的智慧。</p>
+            <h2>五、技术的位置：我不想成为"八股工程师"</h2>
+            <p>在想清楚系统的运行方式之后，我对技术的态度，也悄然发生了变化。我并不排斥技术本身，相反，我始终认为技术是一种可靠的能力。但我逐渐意识到，我并不想把自己塑造成那种以"面经""八股文"为目标的工程师。</p>
+            <p>对我而言，技术首先是一种谋生的手段。我用它来换取生存的空间，但我不希望它反过来定义我。</p>
         </div>
     </div>
     <footer><a href="/">← 返回首页</a> · © 2026 逍遥云初</footer>
