@@ -303,7 +303,8 @@ math:
     tags: none
   per_page: true
   use: null
-menu: null
+menu:
+  分类: /categories/ null
 mermaid:
   code_write: false
   enable: false
