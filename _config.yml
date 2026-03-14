@@ -17,3 +17,5 @@ deploy:
 server:
   port: 4000
   logger: false
+theme: butterfly
+custom_path: source/layouts/index.swig
