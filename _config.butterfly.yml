@@ -298,8 +298,8 @@ math:
   per_page: true
   use: null
 menu:
-  分类: /categories/
-  标签: /tags/
+  关于: /about/
+  首页: /
 mermaid:
   code_write: false
   enable: false
